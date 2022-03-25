@@ -36,6 +36,12 @@ export default {
         colorText: '#333',
       }
     }
+  },
+  created() {
+    setInterval(() => {
+      this.chart.chart.data.unshift([1587272400000, 7240.1, 7240.2, 7120, 7131, 709.93])
+    }, 1000)
+
   }
 }
 </script>
